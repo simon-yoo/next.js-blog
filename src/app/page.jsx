@@ -1,5 +1,17 @@
-import styles from "./homepage.module.css";
+import Featured from '@/components/featured/Featured';
+import styles from './homepage.module.css';
+import Category from '@/components/categoryList/CategoryList';
+import CardList from '@/components/cardList/CardList';
+import Menu from '@/components/menu/Menu';
 
 export default function Home() {
-  return <div>Hello</div>;
+  return (
+    <div className={styles.container}>
+      <Featured />
+      <Category />
+      <div className={styles.content}></div>
+      <CardList />
+      <Menu />
+    </div>
+  );
 }
